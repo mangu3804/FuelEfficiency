@@ -5,27 +5,21 @@ package fuelefficiency;
  * @author mangu3804
  */
 public abstract class Vehicle {
-    private double fuelEfficiency;
     
     /**
-     * Instantiates a vehicle with a fuelEfficiency of fuelEff
-     * pre: none
-     * post : Vehicle object with fuelEfficiency created.
-     * @param fuelEff 
+     * constructor
      */
-    public Vehicle(double fuelEff) {
-        fuelEfficiency = fuelEff;
+    public Vehicle() {
+        //super();
     }
     
     /**
-     * Calculates the distance given the amount of litres
+     * Returns the distance.
      * pre: none
-     * post: Distance is returned.
+     * post: Distance has been returned.
      * @param litres
      * @return 
      */
-    public double getDistance(double litres) {
-        double distance = 100 / fuelEfficiency * litres;
-        return distance;
-    }
+    public abstract double getDistance(double litres);
+    
 }

@@ -8,10 +8,20 @@ public class Motorcycle extends Vehicle {
     
     /**
      * constructor
-     * pre: none
-     * post: Motorcycle object has been created with fuelEfficiency 6.3
      */
     public Motorcycle() {
-        super(6.3);
+        //super();
+    }
+
+    /**
+     * Returns the motorcycle distance.
+     * pre: none
+     * post: Distance has been returned.
+     * @param litres
+     * @return 
+     */
+    public double getDistance(double litres) {
+        double distance = 100 / 6.3 * litres;
+        return distance;
     }
 }

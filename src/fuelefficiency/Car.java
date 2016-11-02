@@ -8,10 +8,20 @@ public class Car extends Vehicle {
     
     /**
      * constructor
-     * pre: none
-     * post: Car object has been created with fuelEfficiency 9.4
      */
     public Car() {
-        super(9.4);
+        //super();
+    }
+
+    /**
+     * Returns the car distance.
+     * pre: none
+     * post: Distance has been returned.
+     * @param litres
+     * @return 
+     */
+    public double getDistance(double litres) {
+        double distance = 100 / 9.4* litres;
+        return distance;
     }
 }
